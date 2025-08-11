@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Karnataka</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Discover Karnataka</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#book-trip">Book a Trip</a></li>
+                    <li><a href="#plan-trip">Plan Your Trip</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section id="book-trip" class="card">
+                <h2>Book Your Karnataka Adventure</h2>
+                <form id="bookingForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Preferred Destination:</label>
+                        <input type="text" id="destination" name="destination">
+                    </div>
+                    <button type="submit">Submit Booking Inquiry</button>
+                </form>
+            </section>
+
+            <section id="plan-trip" class="card">
+                <h2>Plan Your Karnataka Trip</h2>
+                <div class="trip-input-group">
+                    <input type="text" id="trip-input" placeholder="Add a place to visit or activity">
+                    <button id="add-trip">Add to Planner</button>
+                </div>
+                <ul id="trip-list">
+                    </ul>
+            </section>
+        </div>
+    </div>
+    <script src="formscript.js"></script>
+</body>
+</html>
